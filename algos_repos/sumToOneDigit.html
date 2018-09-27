@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum To One Digit</title>
+    <script type="text/javascript">
+function sumToOneDigit(num){
+
+if (num < 10){
+    return num;
+}
+
+var str = num.toString();//converts number to string
+var sum = 0;
+for (var i = 0; i < str.length; i++){
+    sum += Number(str[i])
+}
+return sumToOneDigit(sum);
+
+}
+
+sumToOneDigit(9137)
+2
+
+    </script>
+</head>
+</html>

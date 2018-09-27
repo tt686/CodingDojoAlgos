@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming Fun(damentals)</title>
+    <script type="text/javascript">
+function rollOne(){
+	return Math.floor(Math.random()*6+1);
+}
+
+function playFives(num){
+	for (var i = 0; i <= num; i++){
+		var result = rollOne();
+		console.log(result);
+		if (result == 5){
+			console.log("That's good luck!");
+        }
+    }
+}
+
+function playStatistics(){
+	var max;
+	var min;
+	for (var i = 1; i <= 8; i++){
+		result = rollOne();
+		if (!max){
+            max = result;
+			console.log(max)
+        }
+		if (!min){
+            min = result;
+			console.log(min)
+        }
+ 		if (result > max){
+            max = result;
+			console.log(max)
+        }
+        if (result < min){
+            min = result;
+			console.log(min)
+        }
+    }
+   	console.log("Max is " + max);
+    console.log("Min is " + min);
+}
+
+function playStatistics2(){
+	var max;
+	var min;
+	var sum = 0;
+	for (var i = 1; i <= 8; i++){
+		result = rollOne();
+		console.log("roll is "+ result + " where i = " + i);
+		if (!max){
+            max = result;
+			console.log("Current !notmax value is " + max)
+        }
+		if (!min){
+            min = result;
+			console.log("Current !notmin value is " + min)
+        }
+ 		if (result > max){
+            max = result;
+			console.log("Current max value is " + max)
+        }
+        if (result < min){
+            min = result;
+			console.log("Current min value is " + min)
+        }
+		else {
+			console.log(sum += result);
+
+        }
+		console.log("total sum is " + sum);
+    }
+   	console.log("Max is " + max);
+    console.log("Min is " + min);
+	console.log("Sum is " + sum);
+}
+
+function playStatistics3(num){
+	var max;
+	var min;
+	var sum = 0;
+	for (var i = 1; i <= num; i++){
+		result = rollOne();
+		console.log("roll is "+ result + " where i = " + i);
+		if (!max){
+            max = result;
+			console.log("Current !notmax value is " + max)
+        }
+		if (!min){
+            min = result;
+			console.log("Current !notmin value is " + min)
+        }
+ 		if (result > max){
+            max = result;
+			console.log("Current max value is " + max)
+        }
+        if (result < min){
+            min = result;
+			console.log("Current min value is " + min)
+        }
+		else {
+			console.log(sum += result);
+
+        }
+		console.log("total sum is " + sum);
+    }
+   	console.log("Max is " + max);
+    console.log("Min is " + min);
+	console.log("Sum is " + sum);
+}
+
+function playStatistics4(num){
+	var max;
+	var min;
+	var avg;
+	var sum = 0;
+	for (var i = 1; i <= num; i++){
+		result = rollOne();
+		console.log("roll is "+ result + " where i = " + i);
+		if (!max){
+            max = result;
+			console.log("Current !notmax value is " + max)
+        }
+		if (!min){
+            min = result;
+			console.log("Current !notmin value is " + min)
+        }
+ 		if (result > max){
+            max = result;
+			console.log("Current max value is " + max)
+        }
+        if (result < min){
+            min = result;
+			console.log("Current min value is " + min)
+        }
+		else {
+			console.log(sum += result);
+
+        }
+		console.log("total sum is " + sum);
+    }
+	avg = (sum/num);
+   	console.log("Max is " + max);
+    console.log("Min is " + min);
+	console.log("Sum is " + sum);
+	console.log(avg);
+}
+// playFives(50)
+playStatistics4(10)
+    </script>
+
+</head>
+</html>

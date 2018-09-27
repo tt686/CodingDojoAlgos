@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rockin' the Dojo Sweatshirt</title>
+    <script type="text/javascript">
+function rockingTheDojoSweatshirt(num){
+
+var price = 20;
+var disc9 = .09;
+var disc19 = .19;
+var disc35 = .35;
+var subtotal = 0;
+var discount = 0;
+var total = 0;
+
+for (var i = 0; i <= num; i++){
+    if (num == 0){
+        return 0;
+    }
+    if (num == 1){
+        return price;
+    }
+    if (num == 2){
+        subtotal = price*num;
+        discount = subtotal*disc9;
+        total = subtotal - discount;
+        console.log(total);
+    }
+    if (num == 3){
+        subtotal = price*num;
+        discount = subtotal*disc19;
+        total = subtotal - discount;
+        console.log(total);
+    }
+    if (num == 4 || num > 4){
+        subtotal = price*num;
+        discount = subtotal*disc35;
+        total = subtotal - discount;
+        console.log(total);
+    }
+}
+return Math.ceil(total);
+}
+
+rockingTheDojoSweatshirt(2)
+
+    </script>
+</head>
+</html>

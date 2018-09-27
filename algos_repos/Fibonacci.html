@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci</title>
+    <script type="text/javascript">
+function fibonacci(num){
+​
+    var sum = 0;
+    var i = 0;
+    var j = i+1;
+    var count = 2;
+​
+    while (num > 1){
+​
+    sum = i + j;
+    i = j;
+    j = sum;
+    console.log("Fibonacci"+" ("+(count++)+") = "+sum);
+    num--;
+    }
+​
+    return "The Fibonacci of"+" ("+(count-1)+") is "+sum;
+}
+​
+console.log(fibonacci(9))
+
+    </script>
+</head>
+</html>

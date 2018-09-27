@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_basics_1</title>
+    <script type="text/javascript">
+
+function maxMinAvg(arr){
+	var min = 0;
+	var max = 0;
+	var sum = 0;
+	for (var i = 0; i <= arr.length-1; i++){
+		if (arr[i] < arr[i+1]){
+			min = arr[i];
+        }
+		if (arr[i] > arr[i+1]){
+			max = arr[i];
+        }
+		sum += arr[i];
+		var avg = sum/arr.length;
+    }
+	return("The minimum is " + min + "," + " The maximum is " + max + "," + " the sum is " + sum + "," + " and the avg is " + avg);
+}
+maxMinAvg([1,-2,9,4])
+
+// Answer: "The minimum is -2, The maximum is 9, the sum is 12, and the avg is 3"
+
+</script>
+</head>
+<body>
+</body>
+</html>
